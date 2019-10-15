@@ -13,5 +13,5 @@ Module with the required configuration to connect to OnSIP.
         'views/res_config_settings_views.xml',
     ],
     'application': False,
-    'license': 'OEEL-1',
+    'license': 'OPL-1',
 }
