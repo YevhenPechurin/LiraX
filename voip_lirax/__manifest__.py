@@ -5,7 +5,7 @@
     'description': """
 Module with the required configuration to connect to OnSIP.
     """,
-    'category': 'Hidden',
+    'category': 'Sales',
     'version': '1.0',
     'depends': ['voip'],
     'data': [
