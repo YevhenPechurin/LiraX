@@ -5,6 +5,7 @@
     'description': """
 Module with the required configuration to connect to OnSIP.
     """,
+    'author': "Yevhen Pechurin",
     'category': 'Sales',
     'version': '1.0',
     'depends': ['voip'],
