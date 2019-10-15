@@ -3,10 +3,11 @@
 {
     'name': "VOIP LiraX",
     'description': """
-Module with the required configuration to connect to OnSIP.
+Module with the required configuration to connect to LiraX.
     """,
-    'author': "Yevhen Pechurin",
     'category': 'Sales',
+    'author': "Yevhen Pechurin",
+    'website': 'https://lirax.ua',
     'version': '1.0',
     'depends': ['voip'],
     'data': [
