@@ -1,7 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_voip_lirax_configurator_manager,voip_lirax.voip,model_voip_lirax_configurator,base.group_system,1,1,1,1
-access_voip_lirax_configurator_user,voip_lirax.voip,model_voip_lirax_configurator,base.group_user,1,0,0,0
-access_voip_lirax_phonecall_manager,voip_lirax_phonecall_manager,model_voip_lirax_phonecall,base.group_system,1,1,1,1
-access_voip_lirax_phonecall_user,voip_lirax_phonecall_user,model_voip_lirax_phonecall,base.group_user,1,1,1,0
-access_voip_lirax_phonecall_report_manager,voip_lirax_phonecall_report_manager,model_voip_lirax_phonecall_report,base.group_system,1,1,1,1
-access_voip_lirax_phonecall_report_user,voip_lirax_phonecall_report_user,model_voip_lirax_phonecall_report,base.group_user,1,0,0,0
+access_voip_lirax_configurator,access_voip_lirax_configurator,model_voip_lirax_configurator,base.group_user,1,1,1,1
+access_voip_lirax_phonecall,access_voip_lirax_phonecall,model_voip_lirax_phonecall,base.group_user,1,1,1,1
