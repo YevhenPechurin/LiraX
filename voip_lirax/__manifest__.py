@@ -12,9 +12,10 @@
 
     'category': 'Sales',
     'version': '1.0',
+    'author': "Yevhen Pechurin",
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'web', 'phone_validation', 'mail'],
+    'depends': ['base', 'web'],
 
     # always loaded
     'data': [
