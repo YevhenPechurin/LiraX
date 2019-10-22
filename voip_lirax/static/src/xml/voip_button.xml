@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+<t t-name="voip_lirax.voip_button">
+  <li>
+    <a href="#" title='Voip Panel'>
+      <i class="fa fa-phone fa-fw" role="img" aria-label='Voip Panel'/>
+    </a>
+  </li>
+</t>
+</templates>

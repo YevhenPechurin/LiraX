@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="voip_lirax.DialingPanel">
+        <div class="container voip_panel o_in_home_menu">
+            <div class="row voip_top_panel">
+                <div class="col text-left voip_panel_item">
+                    Dial panel
+                </div>
+                <div class="col text-right">
+                    <a href="#" class="voip_panel_close fa fa-close" aria-label="Close" title="Close"/>
+                </div>
+            </div>
+
+                <div class="row voip_panel_keypad">
+                    <div class="o_call" id="o_call"/>
+                    <div class="voip_panel_keypad_input">
+                        <input class="js_keypad_input" placeholder="Enter the number..."/>
+                        <div aria-label="Backspace" class="js_keypad_backspace fa fa-arrow-left voip_keypad_input_clear" role="img" title="Backspace"/>
+                        <div aria-label="Clear" class="js_keypad_clear fa fa-close voip_keypad_input_clear" role="img" title="Clear"/>
+
+                    </div>
+                    <div class="o_panel voip_keypad clearfix">
+                        <button class="js_number_button voip_keypad_button">1</button>
+                        <button class="js_number_button voip_keypad_button">2</button>
+                        <button class="js_number_button voip_keypad_button">3</button>
+                        <button class="js_number_button voip_keypad_button">4</button>
+                        <button class="js_number_button voip_keypad_button">5</button>
+                        <button class="js_number_button voip_keypad_button">6</button>
+                        <button class="js_number_button voip_keypad_button">7</button>
+                        <button class="js_number_button voip_keypad_button">8</button>
+                        <button class="js_number_button voip_keypad_button">9</button>
+                        <button class="js_number_button voip_keypad_button">*</button>
+                        <button class="js_number_button voip_keypad_button">0</button>
+                        <button class="js_number_button voip_keypad_button">#</button>
+                    </div>
+                    <div class="voip_keypad clearfix">
+                        <button class="voip_keypad_button js_hangup"><i class="fa fa-phone o_hangup"/></button>
+                        <button class="voip_keypad_button o_dtmf_disabled o_dtmf">DTMF</button>
+                        <button class="voip_keypad_button js_make_call"><i class="fa fa-phone text-primary"/></button>
+<!--                        <button class="voip_keypad_button"><i class="fa fa-list o_inactive_button"/></button>-->
+<!--                        <button class="voip_keypad_button"></button>-->
+<!--                        <button class="voip_keypad_button"><i class="fa fa-keyboard-o o_active_button"/></button>-->
+                    </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

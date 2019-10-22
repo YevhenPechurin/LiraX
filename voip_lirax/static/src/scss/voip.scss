@@ -1,0 +1,154 @@
+$no-color: rgba(255, 255, 255, 0.0);
+.voip_panel {
+  direction: ltr;
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 4px 0 17px -2px rgba(0, 0, 0, 0.42);
+  position: absolute;
+  width: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 3;
+  margin: auto;
+  backdrop-filter: blur(4px);
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+  }
+
+  .o_hangup {
+    color: indianred;
+  }
+
+  .o_phonecall_avatar {
+    float: left;
+    margin-right: 3%;
+  }
+  .o_phonecall_partner_image {
+    padding: 0;
+  }
+  .o_call_buttons {
+    padding: 0;
+  }
+
+  .o_inactive_button {
+    color: grey;
+  }
+
+  .o_active_button {
+    color: $primary;
+  }
+
+  .call_button {
+    padding: 1px;
+  }
+
+  .voip_top_panel {
+    background-color: $o-brand-odoo;
+    height: 30px;
+    max-height: 100%;
+    cursor: move;
+    color: white;
+    font-size: 14px;
+
+
+    .voip_panel_close {
+      padding-top: 8px;
+      color: white;
+    }
+
+    .voip_panel_item {
+      padding-top: 5px;
+      color: white;
+    }
+  }
+
+  .voip_panel_keypad_input {
+    flex: 0 0 auto;
+    padding: 5px 5px;
+    position: relative;
+    width: 100%;
+    border: none;
+    background-color: $no-color;
+
+    input {
+      width: 80%;
+      font-size: 200%;
+      border: none;
+      background-color: $no-color;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .voip_keypad_input_clear {
+      cursor: pointer;
+      font-size: 170%;
+      padding: 1%;
+    }
+  }
+
+  .voip_keypad {
+    width: 100%;
+
+    .voip_keypad_button {
+      padding: 10px;
+      width: 32.6%;
+      border: none;
+      background-color: $no-color;
+      font-size: 250%;
+      color: $primary;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken(rgba(255, 255, 255, 0.5), 10%);
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      //.o_hangup {
+      //  color: indianred;
+      //}
+    }
+
+  }
+
+  .o_call {
+    font-size: 150%;
+    width: 100%;
+    padding: 1%;
+  }
+
+  .o_dtmf {
+    font-size: 100% !important;
+    height: 65px;
+  }
+
+  .o_dtmf_disabled {
+    text-decoration: line-through;
+    color: gray !important;
+  }
+
+
+  .blockMsg {
+    left: 0 !important;
+    width: 100% !important;
+    color: white !important;
+    padding: 1px !important;
+    cursor: auto !important;
+  }
+
+  .blockOverlay {
+    cursor: auto !important;
+    background: grey !important;
+    opacity: 0.8 !important;
+  }
+}

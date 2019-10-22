@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="voip_lirax.CallWidget">
+        <div class="row">
+            <div class="col-1">
+                <t t-esc="widget.line"/>.
+            </div>
+            <div class="col-8 o_phonecall_partner_image">
+                <t t-if="widget.partner_image">
+                  <span class="o_phonecall_image">
+                    <img t-att-src="'data:image/jpg;base64,'+widget.partner_image" class="o_phonecall_avatar" alt="Avatar"/>
+                  </span>
+                </t>
+                <t t-else="">
+                  <span class="o_phonecall_image">
+                    <img t-att-src='_s + "/base/static/img/avatar.png"' class="o_dial_phonecall_avatar" alt="Avatar"/>
+                  </span>
+                </t>
+                <t t-esc="widget.phonecall.phoneNumber"/>
+                <span class="o_call_status text-right"/><br/>
+                <t t-esc="widget.partner_name"/>
+            </div>
+            <div class="col-2 text-right o_call_buttons">
+                <a href="#" class="o_inactive_button fa fa-comments js_conference o_conference_button_inactive" aria-label="Conference" title="Conference" t-att-data-line="widget.phonecall.line"/>
+                <a href="#" class="o_inactive_button fa fa-microphone-slash js_hold_call call_button" aria-label="Hold" title="Hold" t-att-data-line="widget.phonecall.line"/>
+                <a href="#" class="o_hangup fa fa-phone js_hangup_call call_button" aria-label="Hangup" title="Hangup" t-att-data-line="widget.phonecall.line"/>
+            </div>
+        </div>
+
+    </t>
+
+    <t t-name="voip.CallStatus">
+        <t t-if="status === 'is_call'">
+            <span> (<t t-esc="duration"/>)</span>
+        </t>
+        <t t-elif="status === 'connecting'">
+            <span>...</span>
+        </t>
+    </t>
+</templates>

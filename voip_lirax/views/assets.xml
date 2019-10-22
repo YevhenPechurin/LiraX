@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="voip_lirax assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/voip_lirax/static/lib/xphone.js"/>
+            <script type="text/javascript" src="/voip_lirax/static/src/js/voip_button.js"/>
+            <script type="text/javascript" src="/voip_lirax/static/src/js/call.js"/>
+            <script type="text/javascript" src="/voip_lirax/static/src/js/dialing_panel.js"/>
+            <script type="text/javascript" src="/voip_lirax/static/src/js/phone_field.js"/>
+            <link rel="stylesheet" type="text/scss" href="/voip_lirax/static/src/scss/voip.scss"/>
+        </xpath>
+    </template>
+
+</odoo>
